@@ -2,7 +2,7 @@ import { buttonVariants } from "@/components/ui/button";
 import { Calendar } from "@/components/ui/calendar";
 import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList } from "@/components/ui/command";
 import { cn } from "@/utils";
-import { ArrowRightIcon, CalendarIcon, Link2Icon, SearchIcon, WaypointsIcon } from "lucide-react";
+import { ArrowRightIcon, CalendarIcon, Timer, TimerIcon, TimerOff, SearchIcon, WaypointsIcon } from "lucide-react";
 import Link from "next/link";
 import { ReactNode } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./card";
@@ -12,29 +12,30 @@ import { Label } from "./label";
 
 export const CARDS = [
     {
-        Icon: Link2Icon,
-        name: "Shorten links",
-        description: "Create short links that are easy to remember and share.",
+        Icon: Timer,
+        name: "Gamified Focus Timer",
+        description: "An intuitive Focus tracking system to keep you accountable",
         href: "#",
-        cta: "Learn more",
+        cta: "Start Timer",
         className: "col-span-3 lg:col-span-1",
+        image: "/assets/focus-kingdom-built-dashboard.png",
         background: (
             <Card className="absolute top-10 left-10 origin-top rounded-none rounded-tl-md transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_0%,#000_100%)] group-hover:scale-105 border border-border border-r-0">
                 <CardHeader>
                     <CardTitle>
-                        Create short links
+                        Start a focus timer
                     </CardTitle>
                     <CardDescription>
-                        Create short links that are easy to remember and share.
+                        Finish your real life work
                     </CardDescription>
                 </CardHeader>
                 <CardContent className="-mt-4">
                     <Label>
-                        Paste your link
+                        What would you like to focus on
                     </Label>
                     <Input
                         type="text"
-                        placeholder="Paste your link here..."
+                        placeholder="Tag your focus session"
                         className="w-full focus-visible:ring-0 focus-visible:ring-transparent"
                     />
                 </CardContent>

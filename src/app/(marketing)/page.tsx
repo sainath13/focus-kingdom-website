@@ -8,14 +8,12 @@ import MagicBadge from "@/components/ui/magic-badge";
 import MagicCard from "@/components/ui/magic-card";
 import { COMPANIES, PROCESS } from "@/utils";
 import { REVIEWS } from "@/utils/constants/misc";
-import { currentUser } from "@clerk/nextjs/server";
+import { InterestForm } from "@/components/interest-form";
 import { ArrowRightIcon, CreditCardIcon, StarIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
 const HomePage = async () => {
-
-    const user = await currentUser();
 
     return (
         <div className="overflow-x-hidden scrollbar-hide size-full">
@@ -30,27 +28,22 @@ const HomePage = async () => {
                             <span className="backdrop absolute inset-[1px] rounded-full bg-neutral-950 transition-colors duration-200 group-hover:bg-neutral-900" />
                             <span className="h-full w-full blur-md absolute bottom-0 inset-x-0 bg-gradient-to-tr from-primary/20"></span>
                             <span className="z-10 py-0.5 text-sm text-neutral-100 flex items-center justify-center gap-1">
-                                ✨ Manage links smarter
+                                ✨ Focus like a king 👑
                                 <ArrowRightIcon className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
                             </span>
                         </button>
                         <h1 className="text-foreground text-center py-6 text-5xl font-medium tracking-normal text-balance sm:text-6xl md:text-7xl lg:text-8xl !leading-[1.15] w-full font-heading">
-                            Smart Links with <span className="text-transparent bg-gradient-to-r from-violet-500 to-fuchsia-500 bg-clip-text inline-bloc">
-                                Precision
+                            Simply Focus and <span className="text-transparent bg-gradient-to-r from-violet-500 to-fuchsia-500 bg-clip-text inline-bloc">
+                                build Empire
                             </span>
                         </h1>
                         <p className="mb-12 text-lg tracking-tight text-muted-foreground md:text-xl text-balance">
-                            Effortlessly streamline your link management with Linkify.
+                            Effortlessly streamline your focus management with Focus Kingdom.
                             <br className="hidden md:block" />
-                            <span className="hidden md:block">Shorten, track, and organize all your links in one place.</span>
+                            <span className="hidden md:block">Build your kingdom one brick at a time.</span>
                         </p>
-                        <div className="flex items-center justify-center whitespace-nowrap gap-4 z-50">
-                            <Button asChild>
-                                <Link href={user ? "/dashboard" : "/auth/sign-in"} className="flex items-center">
-                                    Start creating for free
-                                    <ArrowRightIcon className="w-4 h-4 ml-2" />
-                                </Link>
-                            </Button>
+                        <div className="flex items-center justify-center w-full mt-6">
+                            <InterestForm />
                         </div>
                     </AnimationContainer>
 
@@ -63,7 +56,7 @@ const HomePage = async () => {
                                 delay={9}
                             />
                             <Image
-                                src="/assets/dashboard-dark.svg"
+                                src="/assets/focus-kindom-built-dashboard.png"
                                 alt="Dashboard"
                                 width={1200}
                                 height={1200}
@@ -305,11 +298,8 @@ const HomePage = async () => {
                             <p className="text-muted-foreground mt-6 max-w-md mx-auto">
                                 Experience the cutting-edge solution that transforms how you handle your links. Elevate your online presence with our next-gen platform.
                             </p>
-                            <div className="mt-6">
-                                <Button>
-                                    Get started for free
-                                    <ArrowRightIcon className="w-4 h-4 ml-2" />
-                                </Button>
+                            <div className="mt-10 w-full max-w-sm" id="cta">
+                                <InterestForm />
                             </div>
                         </div>
                     </LampContainer>

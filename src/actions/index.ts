@@ -1,5 +1,5 @@
-import getAuthStatus from "./get-auth-status";
+import { registerInterest } from "./register-interest";
 
 export {
-    getAuthStatus,
+    registerInterest,
 }

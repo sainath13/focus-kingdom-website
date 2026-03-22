@@ -110,11 +110,11 @@ const PricingCards = () => {
                         </CardContent>
                         <CardFooter className="w-full mt-auto">
                             <Link
-                                href={plan.btn.href}
+                                href="#cta"
                                 style={{ width: "100%" }}
                                 className={buttonVariants({ className: plan.name === "Pro" && "bg-purple-500 hover:bg-purple-500/80 text-white" })}
                             >
-                                {plan.btn.text}
+                                {plan.name === "Free" ? "Get Started" : "Register Interest"}
                             </Link>
                         </CardFooter>
                     </Card>
@@ -180,11 +180,11 @@ const PricingCards = () => {
                         </CardContent>
                         <CardFooter className="w-full pt- mt-auto">
                             <Link
-                                href={plan.btn.href}
+                                href="#cta"
                                 style={{ width: "100%" }}
                                 className={buttonVariants({ className: plan.name === "Pro" && "bg-purple-500 hover:bg-purple-500/80 text-white" })}
                             >
-                                {plan.btn.text}
+                                {plan.name === "Free" ? "Get Started" : "Register Interest"}
                             </Link>
                         </CardFooter>
                     </Card>
