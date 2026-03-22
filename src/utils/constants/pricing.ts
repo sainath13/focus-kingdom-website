@@ -101,7 +101,7 @@
 export const PLANS = [
     {
         name: "Free",
-        info: "For most individuals",
+        info: "Checkout Focus Kingdom",
         price: {
             monthly: 0,
             yearly: 0,

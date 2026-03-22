@@ -127,10 +127,10 @@ const HomePage = async () => {
                     <div className="flex flex-col items-center lg:items-center justify-center w-full py-8 max-w-xl mx-auto">
                         <MagicBadge title="The Process" />
                         <h2 className="text-center lg:text-center text-3xl md:text-5xl !leading-[1.1] font-medium font-heading text-foreground mt-6">
-                            Effortless link management in 3 steps
+                            Effortless focus session in 3 ways
                         </h2>
                         <p className="mt-4 text-center lg:text-center text-lg text-muted-foreground max-w-lg">
-                            Follow these simple steps to optimize, organize, and share your links with ease.
+                            Create, build or image these artifacts as reward for your focus sessions
                         </p>
                     </div>
                 </AnimationContainer>
@@ -167,7 +167,7 @@ const HomePage = async () => {
                             Choose a plan that works for you
                         </h2>
                         <p className="mt-4 text-center lg:text-center text-lg text-muted-foreground max-w-lg">
-                            Get started with Linkify today and enjoy more features with our pro plans.
+                            Get started with Focus Kingdom today and see reflection of your real life focus in a pixel world.
                         </p>
                     </div>
                 </AnimationContainer>
@@ -179,7 +179,7 @@ const HomePage = async () => {
                         <div className="flex items-center gap-2">
                             <CreditCardIcon className="w-5 h-5 text-foreground" />
                             <span className="text-muted-foreground">
-                                No credit card required
+                                Managed through Google Play and Apple App Store Subscriptions
                             </span>
                         </div>
                     </div>
@@ -293,10 +293,10 @@ const HomePage = async () => {
                     <LampContainer>
                         <div className="flex flex-col items-center justify-center relative w-full text-center">
                             <h2 className="bg-gradient-to-b from-neutral-200 to-neutral-400 py-4 bg-clip-text text-center text-4xl md:text-7xl !leading-[1.15] font-medium font-heading tracking-tight text-transparent mt-8">
-                                Step into the future of link management
+                                Step into a gamified experience for focus tracking
                             </h2>
                             <p className="text-muted-foreground mt-6 max-w-md mx-auto">
-                                Experience the cutting-edge solution that transforms how you handle your links. Elevate your online presence with our next-gen platform.
+                                Experience a truly gamified focus management app that transforms how you think about focus. Elevate your producitivity with Focus Kingdom.
                             </p>
                             <div className="mt-10 w-full max-w-sm" id="cta">
                                 <InterestForm />

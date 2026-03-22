@@ -1,4 +1,4 @@
-import { BarChart3Icon, FolderOpenIcon, WandSparklesIcon } from "lucide-react";
+import { BarChart3Icon, FolderOpenIcon, WandSparklesIcon, Trees, Swords, Home } from "lucide-react";
 
 export const DEFAULT_AVATAR_URL = "https://api.dicebear.com/8.x/initials/svg?backgroundType=gradientLinear&backgroundRotation=0,360&seed=";
 
@@ -33,19 +33,19 @@ export const COMPANIES = [
 
 export const PROCESS = [
     {
-        title: "Organize Your Links",
-        description: "Efficiently categorize and tag your links for quick access and easy management.",
-        icon: FolderOpenIcon,
+        title: "Build buildings",
+        description: "When you start building construction, workers start building it for you",
+        icon: Home,
     },
     {
-        title: "Shorten and Customize",
-        description: "Create concise, branded links that are easy to share and track.",
-        icon: WandSparklesIcon,
+        title: "Train Units",
+        description: "Once you build Archery, you can train warrior units to protect your kingdom",
+        icon: Swords,
     },
     {
-        title: "Analyze and Optimize",
-        description: "Gain insights into link performance and optimize for better engagement.",
-        icon: BarChart3Icon,
+        title: "Terrain items",
+        description: "Terrain items are special items that can be used to enhance your kingdom",
+        icon: Trees,
     },
 ] as const;
 
