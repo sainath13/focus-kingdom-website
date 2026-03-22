@@ -47,7 +47,7 @@ const Navbar = () => {
                     <div className="flex items-center space-x-12">
                         <Link href="/#home">
                             <span className="text-lg font-bold font-heading !leading-none">
-                                Linkify
+                                Focus Kingdom
                             </span>
                         </Link>
 
@@ -109,7 +109,7 @@ const Navbar = () => {
                     </div>
 
                     <div className="hidden lg:flex items-center">
-                        <Link href="#cta" className={buttonVariants({ size: "sm", })}>
+                        <Link href="#" className={buttonVariants({ size: "sm", })}>
                             Get Started
                             <ZapIcon className="size-3.5 ml-1.5 text-orange-500 fill-orange-500" />
                         </Link>
