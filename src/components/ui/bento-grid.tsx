@@ -1,4 +1,5 @@
 import { buttonVariants } from "@/components/ui/button";
+import Image from "next/image";
 import { Calendar } from "@/components/ui/calendar";
 import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList } from "@/components/ui/command";
 import { cn } from "@/utils";
@@ -20,26 +21,13 @@ export const CARDS = [
         className: "col-span-3 lg:col-span-1",
         image: "/assets/focus-kingdom-built-dashboard.png",
         background: (
-            <Card className="absolute top-10 left-10 origin-top rounded-none rounded-tl-md transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_0%,#000_100%)] group-hover:scale-105 border border-border border-r-0">
-                <CardHeader>
-                    <CardTitle>
-                        Start a focus timer
-                    </CardTitle>
-                    <CardDescription>
-                        Finish your real life work
-                    </CardDescription>
-                </CardHeader>
-                <CardContent className="-mt-4">
-                    <Label>
-                        What would you like to focus on
-                    </Label>
-                    <Input
-                        type="text"
-                        placeholder="Tag your focus session"
-                        className="w-full focus-visible:ring-0 focus-visible:ring-transparent"
-                    />
-                </CardContent>
-            </Card>
+            <Image
+                src="/assets/House1.png"
+                alt="Focus Kingdom"
+                width={500}
+                height={500}
+                className="absolute top-1 left-1 origin-top rounded-none rounded-tl-md transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_0%,#000_100%)] group-hover:scale-105 border border-border border-r-0"
+            />
         ),
     },
     {
@@ -50,17 +38,13 @@ export const CARDS = [
         cta: "Learn more",
         className: "col-span-3 lg:col-span-2",
         background: (
-            <Command className="absolute right-10 top-10 w-[70%] origin-to translate-x-0 border border-border transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)] group-hover:-translate-x-10 p-2">
-                <Input placeholder="Type to search..." />
-                <div className="mt-1 cursor-pointer">
-                    <div className="px-4 py-2 hover:bg-muted rounded-md">linkify.io/hdf00c</div>
-                    <div className="px-4 py-2 hover:bg-muted rounded-md">linkify.io/sdv0n0</div>
-                    <div className="px-4 py-2 hover:bg-muted rounded-md">linkify.io/03gndo</div>
-                    <div className="px-4 py-2 hover:bg-muted rounded-md">linkify.io/09vmmw</div>
-                    <div className="px-4 py-2 hover:bg-muted rounded-md">linkify.io/s09vws</div>
-                    <div className="px-4 py-2 hover:bg-muted rounded-md">linkify.io/sd8fv5</div>
-                </div>
-            </Command>
+            <Image
+                src="/assets/Monastery.png"
+                alt="Focus Kingdom"
+                width={500}
+                height={500}
+                className="absolute top-1 left-1 origin-top rounded-none rounded-tl-md transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_0%,#000_100%)] group-hover:scale-105 border border-border border-r-0"
+            />
         ),
     },
     {
@@ -71,7 +55,13 @@ export const CARDS = [
         cta: "Learn more",
         className: "col-span-3 lg:col-span-2 max-w-full overflow-hidden",
         background: (
-            <Integrations className="absolute right-2 pl-28 md:pl-0 top-4 h-[300px] w-[600px] border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-105" />
+            <Image
+                src="/assets/Monastery.png"
+                alt="Focus Kingdom"
+                width={500}
+                height={500}
+                className="absolute top-1 left-1 origin-top rounded-none rounded-tl-md transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_0%,#000_100%)] group-hover:scale-105 border border-border border-r-0"
+            />
         ),
     },
     {
@@ -82,10 +72,12 @@ export const CARDS = [
         href: "#",
         cta: "Learn more",
         background: (
-            <Calendar
-                mode="single"
-                selected={new Date(2022, 4, 11, 0, 0, 0)}
-                className="absolute right-0 top-10 origin-top rounded-md border border-border transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)] group-hover:scale-105"
+            <Image
+                src="/assets/Monastery.png"
+                alt="Focus Kingdom"
+                width={500}
+                height={500}
+                className="absolute top-1 left-1 origin-top rounded-none rounded-tl-md transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_0%,#000_100%)] group-hover:scale-105 border border-border border-r-0"
             />
         ),
     },
