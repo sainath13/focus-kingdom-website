@@ -39,10 +39,10 @@ export const CARDS = [
         className: "col-span-3 lg:col-span-2",
         background: (
             <Image
-                src="/assets/Monastery.png"
+                src="/assets/onehourfocus.png"
                 alt="Focus Kingdom"
-                width={500}
-                height={500}
+                width={1042}
+                height={828}
                 className="absolute top-1 left-1 origin-top rounded-none rounded-tl-md transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_0%,#000_100%)] group-hover:scale-105 border border-border border-r-0"
             />
         ),
