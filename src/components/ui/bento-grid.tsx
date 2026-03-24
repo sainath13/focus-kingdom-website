@@ -22,10 +22,10 @@ export const CARDS = [
         image: "/assets/focus-kingdom-built-dashboard.png",
         background: (
             <Image
-                src="/assets/House1.png"
+                src="/assets/terrainfocus.png"
                 alt="Focus Kingdom"
-                width={500}
-                height={500}
+                width={966}
+                height={1398}
                 className="absolute top-1 left-1 origin-top rounded-none rounded-tl-md transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_0%,#000_100%)] group-hover:scale-105 border border-border border-r-0"
             />
         ),
@@ -56,10 +56,10 @@ export const CARDS = [
         className: "col-span-3 lg:col-span-2 max-w-full overflow-hidden",
         background: (
             <Image
-                src="/assets/Monastery.png"
+                src="/assets/focusbigbuilding.png"
                 alt="Focus Kingdom"
-                width={500}
-                height={500}
+                width={2580}
+                height={1260}
                 className="absolute top-1 left-1 origin-top rounded-none rounded-tl-md transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_0%,#000_100%)] group-hover:scale-105 border border-border border-r-0"
             />
         ),
@@ -73,10 +73,10 @@ export const CARDS = [
         cta: "Learn more",
         background: (
             <Image
-                src="/assets/Monastery.png"
+                src="/assets/setupguilds.png"
                 alt="Focus Kingdom"
-                width={500}
-                height={500}
+                width={1408}
+                height={806}
                 className="absolute top-1 left-1 origin-top rounded-none rounded-tl-md transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_0%,#000_100%)] group-hover:scale-105 border border-border border-r-0"
             />
         ),
