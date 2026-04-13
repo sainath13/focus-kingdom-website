@@ -15,6 +15,7 @@ import {
 } from "@/components/ui/sheet";
 import { cn, NAV_LINKS } from "@/utils";
 import { LucideIcon, Menu, X } from "lucide-react";
+import { toast } from "sonner";
 import Link from "next/link";
 import React, { useState } from 'react';
 
@@ -63,7 +64,18 @@ const MobileNavbar = () => {
                                                         )}
                                                     >
                                                         {link.menu.map((menuItem) => (
-                                                            <ListItem key={menuItem.title} title={menuItem.title} href={menuItem.href} icon={menuItem.icon}>
+                                                            <ListItem
+                                                                key={menuItem.title}
+                                                                title={menuItem.title}
+                                                                href={menuItem.href}
+                                                                icon={menuItem.icon}
+                                                                onClick={(e) => {
+                                                                    if (menuItem.title === "iOS") {
+                                                                        e.preventDefault();
+                                                                        toast.info("Coming soon!");
+                                                                    }
+                                                                }}
+                                                            >
                                                                 {menuItem.tagline}
                                                             </ListItem>
                                                         ))}

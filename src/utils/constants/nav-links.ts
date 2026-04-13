@@ -8,13 +8,13 @@ export const NAV_LINKS = [
             {
                 title: "Android",
                 tagline: "Get it on Google PlayStore",
-                href: "https://play.google.com/store/games",
+                href: "https://play.google.com/store/apps/details?id=com.dualamigo.focuskingdom",
                 icon: Play,
             },
             {
                 title: "iOS",
                 tagline: "Get it on Apple App store.",
-                href: "https://apps.apple.com/in/app/apple-store/id375380948",
+                href: "#",
                 icon: AppleIcon,
             },
         ]

@@ -8,7 +8,7 @@ import MagicBadge from "@/components/ui/magic-badge";
 import MagicCard from "@/components/ui/magic-card";
 import { COMPANIES, PROCESS } from "@/utils";
 import { REVIEWS } from "@/utils/constants/misc";
-import { InterestForm } from "@/components/interest-form";
+
 import { ArrowRightIcon, CreditCardIcon, StarIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -33,9 +33,7 @@ const HomePage = async () => {
                             </span>
                         </button>
                         <h1 className="text-foreground text-center py-6 text-5xl font-medium tracking-normal text-balance sm:text-6xl md:text-7xl lg:text-8xl !leading-[1.15] w-full font-heading">
-                            Simply Focus and <span className="text-transparent bg-gradient-to-r from-violet-500 to-fuchsia-500 bg-clip-text inline-bloc">
-                                build Empire
-                            </span>
+                            Focus Kingdom
                         </h1>
                         <p className="mb-12 text-lg tracking-tight text-muted-foreground md:text-xl text-balance">
                             Effortlessly streamline your focus management with Focus Kingdom.
@@ -43,7 +41,10 @@ const HomePage = async () => {
                             <span className="hidden md:block">Build your kingdom one brick at a time.</span>
                         </p>
                         <div className="flex items-center justify-center w-full mt-6">
-                            <InterestForm />
+                            <Link href="https://play.google.com/store/apps/details?id=com.dualamigo.focuskingdom" className={buttonVariants({ size: "lg", className: "bg-gradient-to-r from-violet-600 to-fuchsia-600 hover:from-violet-700 hover:to-fuchsia-700 text-white font-medium px-8 py-6 rounded-xl shadow-lg transition-all duration-300 hover:scale-105 active:scale-95" })}>
+                                Get started with Google Play
+                                <ZapIcon className="size-5 ml-2 text-orange-400 fill-orange-400" />
+                            </Link>
                         </div>
                     </AnimationContainer>
 
@@ -70,34 +71,7 @@ const HomePage = async () => {
                 </div>
             </MaxWidthWrapper >
 
-            {/* Companies Section */}
-            <MaxWidthWrapper>
-                <AnimationContainer delay={0.4}>
-                    <div className="py-14">
-                        <div className="mx-auto px-4 md:px-8">
-                            <h2 className="text-center text-sm font-medium font-heading text-neutral-400 uppercase">
-                                Liked by my friends and reddit strangers
-                            </h2>
-                            <div className="mt-8">
-                                <ul className="flex flex-wrap items-center gap-x-6 gap-y-6 md:gap-x-16 justify-center">
-                                    {COMPANIES.map((company) => (
-                                        <li key={company.name}>
-                                            <Image
-                                                src={company.logo}
-                                                alt={company.name}
-                                                width={80}
-                                                height={80}
-                                                quality={100}
-                                                className="w-28 h-auto"
-                                            />
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </AnimationContainer>
-            </MaxWidthWrapper>
+
 
             {/* Features Section */}
             <MaxWidthWrapper className="pt-10">
@@ -158,36 +132,9 @@ const HomePage = async () => {
                 </div>
             </MaxWidthWrapper>
 
-            {/* Pricing Section */}
-            <MaxWidthWrapper className="py-10">
-                <AnimationContainer delay={0.1}>
-                    <div className="flex flex-col items-center lg:items-center justify-center w-full py-8 max-w-xl mx-auto">
-                        <MagicBadge title="Simple Pricing" />
-                        <h2 className="text-center lg:text-center text-3xl md:text-5xl !leading-[1.1] font-medium font-heading text-foreground mt-6">
-                            Choose a plan that works for you
-                        </h2>
-                        <p className="mt-4 text-center lg:text-center text-lg text-muted-foreground max-w-lg">
-                            Get started with Focus Kingdom today and see reflection of your real life focus in a pixel world.
-                        </p>
-                    </div>
-                </AnimationContainer>
-                <AnimationContainer delay={0.2}>
-                    <PricingCards />
-                </AnimationContainer>
-                <AnimationContainer delay={0.3}>
-                    <div className="flex flex-wrap items-start md:items-center justify-center lg:justify-evenly gap-6 mt-12 max-w-5xl mx-auto w-full">
-                        <div className="flex items-center gap-2">
-                            <CreditCardIcon className="w-5 h-5 text-foreground" />
-                            <span className="text-muted-foreground">
-                                Managed through Google Play and Apple App Store Subscriptions
-                            </span>
-                        </div>
-                    </div>
-                </AnimationContainer>
-            </MaxWidthWrapper>
 
-            {/* Reviews Section */}
-            <MaxWidthWrapper className="py-10">
+
+{/* <MaxWidthWrapper className="py-10">
                 <AnimationContainer delay={0.1}>
                     <div className="flex flex-col items-center lg:items-center justify-center w-full py-8 max-w-xl mx-auto">
                         <MagicBadge title="Our Customers" />
@@ -195,7 +142,7 @@ const HomePage = async () => {
                             What our users are saying
                         </h2>
                         <p className="mt-4 text-center lg:text-center text-lg text-muted-foreground max-w-lg">
-                            Here&apos;s what some of our users have to say about Linkify.
+                            Here&apos;s what some of our users have to say about Focus Kingdom.
                         </p>
                     </div>
                 </AnimationContainer>
@@ -285,7 +232,7 @@ const HomePage = async () => {
                         ))}
                     </div>
                 </div>
-            </MaxWidthWrapper>
+            </MaxWidthWrapper> */}
 
             {/* CTA Section */}
             <MaxWidthWrapper className="mt-20 max-w-[100vw] overflow-x-hidden scrollbar-hide">
@@ -298,9 +245,10 @@ const HomePage = async () => {
                             <p className="text-muted-foreground mt-6 max-w-md mx-auto">
                                 Experience a truly gamified focus management app that transforms how you think about focus. Elevate your producitivity with Focus Kingdom.
                             </p>
-                            <div className="mt-10 w-full max-w-sm" id="cta">
-                                <InterestForm />
-                            </div>
+                                <Link href="https://play.google.com/store/apps/details?id=com.dualamigo.focuskingdom" className={buttonVariants({ size: "lg", className: "bg-gradient-to-r from-violet-600 to-fuchsia-600 hover:from-violet-700 hover:to-fuchsia-700 text-white font-medium px-8 py-6 rounded-xl shadow-lg transition-all duration-300 hover:scale-105 active:scale-95" })}>
+                                    Get started with Google Play
+                                    <ZapIcon className="size-5 ml-2 text-orange-400 fill-orange-400" />
+                                </Link>
                         </div>
                     </LampContainer>
                 </AnimationContainer>

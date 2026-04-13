@@ -19,7 +19,7 @@ const Footer = () => {
                             Track your focus with ease.
                         </p>
                         <span className="mt-4 text-neutral-200 text-sm flex items-center">
-                            Made by DualAmigo LLP
+                            Made with love
                         </span>
                     </div>
                 </AnimationContainer>

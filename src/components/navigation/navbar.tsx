@@ -12,6 +12,7 @@ import {
 } from "@/components/ui/navigation-menu";
 import { cn, NAV_LINKS } from "@/utils";
 import { LucideIcon, ZapIcon } from "lucide-react";
+import { toast } from "sonner";
 import Link from "next/link";
 import React, { useEffect, useState } from 'react';
 import MaxWidthWrapper from "../global/max-width-wrapper";
@@ -87,6 +88,12 @@ const Navbar = () => {
                                                                 title={menuItem.title}
                                                                 href={menuItem.href}
                                                                 icon={menuItem.icon}
+                                                                onClick={(e) => {
+                                                                    if (menuItem.title === "iOS") {
+                                                                        e.preventDefault();
+                                                                        toast.info("Coming soon!");
+                                                                    }
+                                                                }}
                                                             >
                                                                 {menuItem.tagline}
                                                             </ListItem>

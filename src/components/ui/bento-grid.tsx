@@ -16,8 +16,8 @@ export const CARDS = [
         Icon: Timer,
         name: "Gamified Focus Timer",
         description: "An intuitive Focus tracking system to keep you accountable",
-        href: "#",
-        cta: "Start Timer",
+        href: "https://play.google.com/store/apps/details?id=com.dualamigo.focuskingdom",
+        cta: "Download on Play Store",
         className: "col-span-3 lg:col-span-1",
         image: "/assets/focus-kingdom-built-dashboard.png",
         background: (
@@ -32,10 +32,10 @@ export const CARDS = [
     },
     {
         Icon: SearchIcon,
-        name: "Search your links",
-        description: "Quickly find the links you need with AI-powered search.",
-        href: "#",
-        cta: "Learn more",
+        name: "Start focus sessions",
+        description: "With builders you can build buildings",
+        href: "https://play.google.com/store/apps/details?id=com.dualamigo.focuskingdom",
+        cta: "Download on Play Store",
         className: "col-span-3 lg:col-span-2",
         background: (
             <Image
@@ -49,10 +49,10 @@ export const CARDS = [
     },
     {
         Icon: WaypointsIcon,
-        name: "Connect your apps",
-        description: "Integrate with your favorite apps and services.",
-        href: "#",
-        cta: "Learn more",
+        name: "Castles and Monastery",
+        description: "Different buildings take different times",
+        href: "https://play.google.com/store/apps/details?id=com.dualamigo.focuskingdom",
+        cta: "Download on Play Store",
         className: "col-span-3 lg:col-span-2 max-w-full overflow-hidden",
         background: (
             <Image
@@ -66,11 +66,11 @@ export const CARDS = [
     },
     {
         Icon: CalendarIcon,
-        name: "Calendar",
-        description: "Keep track of your links with our calendar view.",
+        name: "Guilds",
+        description: "Keep track of your focus with guilds details.",
         className: "col-span-3 lg:col-span-1",
-        href: "#",
-        cta: "Learn more",
+        href: "https://play.google.com/store/apps/details?id=com.dualamigo.focuskingdom",
+        cta: "Download on Play Store",
         background: (
             <Image
                 src="/assets/setupguilds.png"
