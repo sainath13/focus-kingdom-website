@@ -1,7 +1,7 @@
 import { AnimationContainer, MaxWidthWrapper, PricingCards } from "@/components";
 import { BentoCard, BentoGrid, CARDS } from "@/components/ui/bento-grid";
 import { BorderBeam } from "@/components/ui/border-beam";
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { LampContainer } from "@/components/ui/lamp";
 import MagicBadge from "@/components/ui/magic-badge";
@@ -9,7 +9,7 @@ import MagicCard from "@/components/ui/magic-card";
 import { COMPANIES, PROCESS } from "@/utils";
 import { REVIEWS } from "@/utils/constants/misc";
 
-import { ArrowRightIcon, CreditCardIcon, StarIcon } from "lucide-react";
+import { ArrowRightIcon, CreditCardIcon, StarIcon, ZapIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
